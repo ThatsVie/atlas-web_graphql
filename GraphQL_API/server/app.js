@@ -6,7 +6,9 @@ const schema = require('./schema/schema');
 const app = express();
 
 
-mongoose.connect('REDACTED&appName=atlas-graphql-cluster');
+require('dotenv').config();
+mongoose.connect(process.env.MONGODB_URI);
+
 
 mongoose.connection.once('open', () => {
     console.log('Connected to database');
