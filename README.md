@@ -1,19 +1,9 @@
 # GraphQL API
 
+This project involved building a GraphQL API using Express, Mongoose, and MongoDB Atlas to manage and interact with Projects and Tasks. Through implementing queries, mutations, and type relationships, the API provides a flexible and efficient way to fetch, add, and manipulate data. The project demonstrated how to set up a scalable backend that can be easily integrated with front-end clients using tools like GraphiQL for testing and MongoDB Atlas for database management.
 
-<details>
-<summary>**Background Context**</summary>
 
-In this project, you will create an application using a query language, designed to make APIs fast, flexible, and developer-friendly. 
-
-- **Part 1:** You will create the back-end using ExpressJs and set up GraphQL with all components (schema, root query, and resolve function). 
-- **Part 2:** Connect your back-end to MongoDB and test your queries to the GraphQL server using Graphiql. 
-- **Part 3:** Create the front-end using ReactJS and the GraphQL Client Apollo.
-
-</details>
-
-<details>
-<summary>**Resources**</summary>
+## Resources
 
 - [GraphQL](https://graphql.org/)
 - [GraphQL: Schemas and Types](https://graphql.org/learn/schema/)
@@ -24,21 +14,74 @@ In this project, you will create an application using a query language, designed
 
 </details>
 
-<details>
-<summary>**Learning Objectives**</summary>
+## Learning Objectives
 
-- What GraphQL means
-- What is Graphiql
-- How to test queries using Graphiql
-- What is Apollo
-- How to connect to MongoDB
-- How to make queries from React
-- How to make a GraphQL server accept requests from another server
+<details>
+  <summary><strong>What GraphQL means</strong></summary>
+  
+  GraphQL is a query language for APIs that allows clients to request exactly the data they need, and nothing more. It provides a more efficient, powerful, and flexible alternative to traditional REST APIs by enabling clients to specify the shape and structure of the response. 
+
+  **Tasks Covered:** Task 0 (initial setup of GraphQL server and schema), Task 1 (Root Query), Task 2 (testing queries in GraphiQL), Task 3 (GraphQL ID type).
 
 </details>
 
 <details>
-<summary>**Requirements**</summary>
+  <summary><strong>What is GraphiQL</strong></summary>
+
+  GraphiQL is an in-browser tool that allows developers to interact with their GraphQL API. It enables you to write, test, and execute GraphQL queries and mutations, making it easy to see the structure of the data you can query. It also provides features like auto-completion and query formatting.
+
+  **Tasks Covered:** Task 2 (initial setup and testing with GraphiQL), Task 7 (testing mutations with GraphiQL).
+
+</details>
+
+<details>
+  <summary><strong>How to test queries using GraphiQL</strong></summary>
+
+  To test queries in GraphiQL, navigate to `http://localhost:4000/graphql` after starting your server. You can write and execute GraphQL queries and mutations directly in the interface. For example, to fetch all tasks or add a new project, simply input the appropriate query or mutation and click the "Run" button.
+
+  **Tasks Covered:** Task 2 (testing queries), Task 5 (testing root queries), Task 7 (testing mutations).
+
+</details>
+
+<details>
+  <summary><strong>What is Apollo</strong></summary>
+
+  Apollo is a popular client library for interacting with GraphQL APIs. It simplifies the process of making GraphQL queries and mutations from a front-end application, handling data caching, state management, and error handling. Apollo also supports integrations with various frameworks like React, Angular, and Vue.js.
+
+  **Tasks Covered:** Although Apollo was not directly implemented in this project, knowledge of GraphQL gained in Tasks 0-8 would help in understanding how to use Apollo with a GraphQL server.
+
+</details>
+
+<details>
+  <summary><strong>How to connect to MongoDB</strong></summary>
+
+  To connect to MongoDB, we used Mongoose, a Node.js library that simplifies interactions with MongoDB. After setting up a cluster on MongoDB Atlas, we connected to it using a connection string. We set up models for `Projects` and `Tasks` to interact with the database, enabling us to store, query, and manage data directly.
+
+  **Tasks Covered:** Task 6 (connecting to MongoDB Atlas), Task 8 (updating resolve functions to use MongoDB).
+
+</details>
+
+<details>
+  <summary><strong>How to make queries from React</strong></summary>
+
+  To make GraphQL queries from React, you would typically use a client like Apollo Client. After setting up the GraphQL server (as done in this project), you can configure Apollo Client in your React application to make queries and mutations, automatically updating your UI when data changes.
+
+  **Tasks Covered:** While the project did not cover React specifically, the knowledge from Tasks 0-8 can be applied to making queries from React using Apollo Client or other GraphQL libraries.
+
+</details>
+
+<details>
+  <summary><strong>How to make a GraphQL server accept requests from another server</strong></summary>
+
+  To make a GraphQL server accept requests from another server, you need to configure CORS (Cross-Origin Resource Sharing) on the server. By enabling CORS, you can control which domains are allowed to send requests to your GraphQL server. In Express, you can achieve this using the `cors` middleware.
+
+  **Tasks Covered:** The project setup in Task 0 can be extended to include CORS configuration for handling requests from other servers.
+
+</details>
+
+
+
+## Requirements
 
 - Allowed editors: vi, vim, emacs, Visual Studio Code
 - Files will be interpreted/compiled on Ubuntu 18.04 LTS using Node (version 12.x.x)
@@ -48,8 +91,8 @@ In this project, you will create an application using a query language, designed
 
 </details>
 
-<details>
-<summary>**Setup**</summary>
+## Set Up
+<details><summary><strong>Instructions</strong></summary>
 
 **Install NodeJS**
 *(in your home directory):*
@@ -281,7 +324,7 @@ Create the file `schema.js`, in which:
 
 </details>
 
----
+
 
 ### Task 1: Root Query
 
