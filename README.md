@@ -1,6 +1,13 @@
-# GraphQL API
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/5818c899-a70d-45f9-b33f-2e24951b5c9a" alt="studiousblackpug" width="400">
+</div>
 
-This project involved building a GraphQL API using Express, Mongoose, and MongoDB Atlas to manage and interact with Projects and Tasks. Through implementing queries, mutations, and type relationships, the API provides a flexible and efficient way to fetch, add, and manipulate data. The project demonstrated how to set up a scalable backend that can be easily integrated with front-end clients using tools like GraphiQL for testing and MongoDB Atlas for database management.
+<h1 align="center">GraphQL API</h1>
+
+<p align="center">
+    This project involved building a GraphQL API using Express, Mongoose, and MongoDB Atlas to manage and interact with Projects and Tasks. Through implementing queries, mutations, and type relationships, the API provides a flexible and efficient way to fetch, add, and manipulate data. The project demonstrated how to set up a scalable backend that can be easily integrated with front-end clients using tools like GraphiQL for testing and MongoDB Atlas for database management.
+</p>
+
 
 
 ## Resources
